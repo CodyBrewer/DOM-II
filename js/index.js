@@ -9,6 +9,8 @@ const navContainer = document.querySelector('.nav-container');
 const h1 = document.querySelector('h1');
 const body = document.querySelector('body');
 const destination = document.querySelector('.destination');
+
+//events
 footer.addEventListener('mouseover', (event) => {
     alert("Oh, Hai");
     event.stopPropagation();
@@ -46,6 +48,9 @@ h1.addEventListener('mouseup', (event) => {
 destination.addEventListener('click', (event) => {
     event.target.style.display = 'none';
 });
+window.addEventListener('resize', (event) => {
+    body.style.backgroundColor = 'blue';
+})
 
 // * [ ] `mouseover`
 // * [ ] `keydown`
